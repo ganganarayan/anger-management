@@ -1,0 +1,290 @@
+:root {
+  --soft-orange: #ffb393;
+  --primary-bg: #5c2438;
+  --secondary-bg: #421424;
+  --tertiary-bg: #4d1529;
+  --text-light: #f4cab8;
+  --text-dark: #000;
+}
+
+/* ============ Base Styles ============ */
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--soft-orange);
+  font-family: serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--soft-orange);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+strong {
+  color: var(--text-light);
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  display: block;
+}
+
+/* ============ Typography ============ */
+
+.heading-xl {
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+.heading-md {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.body-text {
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.serif {
+  font-family: serif;
+}
+
+/* ============ Utility ============ */
+
+.center-text {
+  text-align: center;
+  display: block;
+}
+
+.center-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.primary-bg {
+  background-color: var(--primary-bg);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-bg);
+}
+
+.tertiary-bg {
+  background-color: var(--tertiary-bg);
+}
+
+.bg-soft-orange {
+  background-color: var(--soft-orange);
+}
+
+.large-margin-left {
+  margin-left: 3rem;
+}
+
+.large-margin {
+  margin: 2.5rem;
+}
+
+.top-margin {
+  margin-top: 1.5rem;
+}
+
+.large-padding {
+  padding: 5rem;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.image-fit {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ============ Layout ============ */
+
+.upper-blank {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .upper-blank {
+    padding-left: 50vw;
+  }
+}
+
+.header-section {
+  display: flex;
+  background-color: #000;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  padding: 4rem 5rem;
+  flex: 1;
+}
+
+.image-side {
+  width: 33%;
+  margin: 1rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0 6rem 0;
+  background-color: var(--secondary-bg);
+}
+
+.content-box {
+  width: 90%;
+  max-width: 1200px;
+  background-color: var(--primary-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-item {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.icon-square {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1.25rem;
+  margin-top: 2rem;
+  background-color: var(--tertiary-bg);
+  border-radius: 2px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* ============ Components ============ */
+
+.why-box {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.why-item {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--tertiary-bg);
+  border-radius: 4px;
+  font-family: sans-serif;
+  border: 1px solid #fff;
+}
+
+.testimonial-box {
+  color: var(--text-light);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--text-light);
+  color: var(--text-light);
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* ============ Buttons ============ */
+
+.cta-button,
+.cta-button-dark {
+  border: none;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 620;
+  transition: background-color 0.2s ease;
+  margin: 1rem;
+}
+
+.cta-button {
+  background-color: var(--soft-orange);
+  color: var(--text-dark);
+}
+
+.cta-button:hover {
+  background-color: #ff9e7a;
+}
+
+.cta-button:focus,
+.cta-button-dark:focus {
+  outline: 2px dashed #fff;
+  outline-offset: 4px;
+}
+
+.cta-button-dark {
+  background-color: var(--secondary-bg);
+  color: var(--text-light);
+}
+
+.cta-button-dark:hover {
+  background-color: var(--tertiary-bg);
+}
