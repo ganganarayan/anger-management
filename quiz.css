@@ -1,0 +1,125 @@
+/* Layout and Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 40px 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"] {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  border-color: #0078d4;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#start-btn,
+#next-btn {
+  background-color: #0078d4;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#start-btn:hover,
+#next-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Quiz Questions */
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Answer Options */
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f5f5f5;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #e6f2ff;
+}
+
+.option-btn.selected {
+  background-color: #d0eaff;
+  border-color: #0078d4;
+  color: #004080;
+  font-weight: 600;
+}
+
+/* Result */
+#result {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  color: #2d3436;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
